@@ -239,14 +239,13 @@ class InterPyter():
 
 #{ Main Program }
 if __name__ == '__main__':
-    cradle = Cradle()
-    #print('>>> ', end='')
+    interPyter = InterPyter()
     exit = False
     while not exit:
         name = input(">>> ") 
         if name == 'exit()':
             exit = True
         else:
-            cradle.evalLine(name)
+            interPyter.evalLine(name)
     sys.exit()
 #{--------------------------------------------------------------}
